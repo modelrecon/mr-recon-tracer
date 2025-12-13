@@ -3,7 +3,13 @@ name = "recon-trace"
 version = "0.1.0"
 description = "Lightweight circuit tracing toolkit for transformers"
 authors = [{name="ModelRecon Team", email="team@modelrecon.com"}]
-dependencies = ["torch>=2.0.0","transformers>=4.35.0"]
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.35.0"
+]
+
+[tool.setuptools]
+packages = { find = { where = ["."] } }
 
 [tool.black]
 line-length = 88

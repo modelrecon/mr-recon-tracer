@@ -11,7 +11,7 @@ class ReconTracer:
     def _hook(self, layer_name):
         def fn(module, input, output):
             self.data["traces"].append({
-                "layer": layer_name.split('.')[1],
+                "layer": layer_name.split('.')[0],
                 "module": layer_name.split('.')[-1],
                 "activations": output.detach().cpu().tolist()
             })

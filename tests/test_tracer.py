@@ -17,3 +17,5 @@ def test_tracer_basic():
     assert "traces" in tracer.data
     assert len(tracer.data["traces"]) > 0
     print("Basic tracer test passed")
+
+test_tracer_basic()
