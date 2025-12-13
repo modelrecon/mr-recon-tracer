@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "model_class": "GPT2LMHeadModel",
+    "timestamp": "2025-12-13T09:57:38.970001",
+    "input_shape": [
+      1,
+      2
+    ]
+  },
+  "traces": [
+    {
+      "layer": "transformer.h.0.attn",
+      "module_type": "GPT2Attention",
+      "reduction": {
+        "shape": [
+          1,
+          2,
+          2
+        ],
+        "mean": 0.00024296168703585863,
+        "std": 8.337265899172053e-05,
+        "min": 0.00017072077025659382,
+        "max": 0.00031523482175543904,
+        "l2_norm": 0.0005069265607744455
+      }
+    },
+    {
+      "layer": "transformer.h.0.mlp",
+      "module_type": "GPT2MLP",
+      "reduction": {
+        "shape": [
+          1,
+          2,
+          2
+        ],
+        "mean": 0.0007601274410262704,
+        "std": 0.0003568326064851135,
+        "min": 0.000450896070105955,
+        "max": 0.0010696377139538527,
+        "l2_norm": 0.0016410860698670149
+      }
+    }
+  ]
+}
