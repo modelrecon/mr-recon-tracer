@@ -1,44 +1,51 @@
 {
   "meta": {
-    "model_class": "GPT2LMHeadModel",
-    "timestamp": "2025-12-13T09:57:38.970001",
+    "model_name": "GPT2LMHeadModel",
+    "timestamp": "2025-12-14T08:35:37.646846",
     "input_shape": [
       1,
       2
     ]
   },
-  "traces": [
+  "tokens": [
+    "15496",
+    "995"
+  ],
+  "layers": [
     {
-      "layer": "transformer.h.0.attn",
-      "module_type": "GPT2Attention",
-      "reduction": {
-        "shape": [
-          1,
-          2,
-          2
+      "layer_name": "transformer.h.0.attn",
+      "core_metrics": {
+        "energy": [
+          29.046253204345703,
+          32.93799591064453
         ],
-        "mean": 0.00024296168703585863,
-        "std": 8.337265899172053e-05,
-        "min": 0.00017072077025659382,
-        "max": 0.00031523482175543904,
-        "l2_norm": 0.0005069265607744455
+        "mean_activation": [
+          0.00770065700635314,
+          0.03462865948677063
+        ],
+        "std_activation": [
+          1.0487711429595947,
+          1.1888171434402466
+        ]
       }
     },
     {
-      "layer": "transformer.h.0.mlp",
-      "module_type": "GPT2MLP",
-      "reduction": {
-        "shape": [
-          1,
-          2,
-          2
+      "layer_name": "transformer.h.0.mlp",
+      "core_metrics": {
+        "energy": [
+          136.30615234375,
+          27.39299774169922
         ],
-        "mean": 0.0007601274410262704,
-        "std": 0.0003568326064851135,
-        "min": 0.000450896070105955,
-        "max": 0.0010696377139538527,
-        "l2_norm": 0.0016410860698670149
+        "mean_activation": [
+          0.06774809211492538,
+          -0.004528000485152006
+        ],
+        "std_activation": [
+          4.921263694763184,
+          0.9890933632850647
+        ]
       }
     }
-  ]
+  ],
+  "provenance": {}
 }
